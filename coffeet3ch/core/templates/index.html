@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CoffeeT3ch</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link type="text/css" rel="stylesheet" href="{% static 'js/featherlight/featherlight.min.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'js/featherlight/featherlight.gallery.min.css' %}" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav id="main-menu" class="duas-colunas">
+                    <div class="img-logo">
+                        <img src="{% static 'img/logo.png' %}" alt="CoffeeT3ch" title="CoffeeT3ch" />
+                    </div>
+                    <ul>
+                        <li class="current"><a href="#frases-header">Início</a></li>
+                        <li><a href="#quem-somos">Quem somos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Fotos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div id="frases-header">
+                    <h1>Uma startup</h1> 
+                    <h1>de tecnologia</h1> 
+                </div>
+            </div>
+        </header>
+        <section id="quem-somos">
+            <div class="container">
+                <div class="title">
+                    <h1>[Quem Somos]</h1>
+                </div>
+                <div class="content">
+                    <div class="texto">
+                        <p>
+                            Uma startup de tecnologia de Bragança Paulista - SP
+                            que desenvolve soluções para diversos segmentos do
+                            mercado.
+                        </p>
+                        <p>
+                            Movidos à cafeína, temos paixão pelo que fazemos,
+                            contando sempre com os melhores profissionais da
+                            região, iremos solucionar o problema da sua empresa.
+                        </p>
+                    </div> 
+                    <img id="img-caneca" src="{% static 'img/caneca.png' %}" />                   
+                </div>
+            </div>            
+        </section>
+        <section id="servicos">
+            <div class="container">
+                    <div class="title">
+                        <h1>[Serviços]</h1>
+                    </div>
+                    <div class="content tres-colunas">
+                        <div id="servico-1" class="servico-item">
+                            <div class="title">
+                                <h2>Webdesign</h2>
+                            </div>
+                            <p class="description">
+                                Sites responsivos (que se adaptam à qualquer tela), desenvolvidos com as tecnologias mais modernas como HTML5, CSS3 e JavaScript.
+                            </p>
+                        </div>
+                        <div id="servico-2" class="servico-item">
+                            <div class="title">
+                                <h2>Sistemas</h2>
+                            </div>
+                            <p class="description">
+                                Desenvolvemos sistemas e apps sob medida de acordo com a necessidade do seu negócio. CRMs, ERPs, Controle de Caixa ou Estoque.
+                            </p>
+                        </div>
+                        <div id="servico-3" class="servico-item">
+                            <div class="title">
+                                <h2>Marketing</h2>
+                            </div>
+                            <p class="description">
+                                Dê um boost em seu negócio com nossas estratégias de Marketing.
+                                Consultorias esporádicas ou contratos mensais você escolhe a melhor forma!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h2>[Não encontrou o que procurava?]</h2>
+                        </div>
+                        <p>
+                            Contate-nos, com certeza iremos satisfazer todas as suas dúvidas sobre nossos serviços!
+                        </p>
+                        <button class="btn btn-blue btn-big">Entrar em contato</button>
+                    </div>
+            </div>
+        </section>
+        <section id="depoimentos">
+            <div class="container">
+                <div class="title">
+                    <h1>[Depoimentos]</h1>
+                </div>
+                <div class="content">
+                    <div id="depo-slider">
+                        <div id="slider-item-1" class="slider-item">
+                            <div class="aspas">
+                                <img src="{% static 'img/aspas.png' %}" />
+                            </div>                            
+                            <div class="review-info">
+                                <ul class="rating-stars">
+                                    <li><img src="{% static 'img/star.png' %}" /></li>
+                                    <li><img src="{% static 'img/star.png' %}" /></li>
+                                    <li><img src="{% static 'img/star.png' %}" /></li>
+                                    <li><img src="{% static 'img/star.png' %}" /></li>
+                                    <li><img src="{% static 'img/star.png' %}" /></li>
+                                </ul>
+                                <div class="review">
+                                    <p>Essa galera manja demais!</p>
+                                </div>
+                                <div class="author">
+                                    Zé Empresário
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="{% static 'img/avatar-1.png' %}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="container">
+                    <div class="title">
+                        <h1>[Assine nossa newsletter]</h1>
+                    </div>
+                    <div class="content">
+                        <div id="form-news">
+                            <form action="#" method="POST" accept-charset="UTF-8">
+                                <label for="email-news">Email:</label><br>
+                                <input id="email-news" name="email-news" type="text" placeholder="seuemail@exemplo.com"/>
+                                <button class="btn btn-big btn-full btn-orange">Assinar agora</button>
+                            </form>
+                        </div>
+                                                
+                    </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <div class="title">
+                    <h1>[Fotos]</h1>
+                </div>
+                <div class="content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto1.jpg' %}"></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto2.jpg' %}"></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto3.jpg' %}"></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto4.jpg' %}"></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto5.jpg' %}"></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a class="thumbnail gallery" href="{% static 'img/fotos/foto6.jpg' %}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div>
+                    <div class="title">
+                        <h1>[Contato]</h1>
+                    </div>
+                    <form>
+                        <div>
+                            <label>Nome:</label><br>
+                            <input type="text" name="txt-nome"/>
+                        </div>
+                        <div>
+                            <label>Email:</label><br>
+                            <input type="text" name="txt-email"/>
+                        </div>
+                        <div>
+                            <label>Mensagem:</label><br>
+                            <textarea name="txt-msg" rows="8"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-full btn-big btn-orange">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+                <div style="padding-top:100px">
+                    <img style="width:100%;" src="{% static 'img/mapa.jpg' %}" />
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <div id="rodape">
+                <div class="container">
+                    <p>2018 - Desenvolvido por Matheus Vieira de Paula - <span>Feito com Django!</span></p>
+                </div>
+            </div>
+        </footer>
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/jquery.nav.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/featherlight/featherlight.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/featherlight/featherlight.gallery.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script>
+            $(document).ready(function(){                
+                $('#main-menu ul').onePageNav({
+                    currentClass: 'current',
+                    changeHash: false,
+                    scrollSpeed: 800
+                });
+
+                $('.portfolio-item .thumbnail').each(function(){
+                    const imgPath = $(this).attr('href');
+                    $(this).css('background-image', 'url("'+imgPath+'")');
+                });
+
+                $('.gallery').featherlightGallery({
+                    gallery: {
+                        fadeIn: 300,
+                        fadeOut: 300
+                    },
+                    openSpeed:    300,
+                    closeSpeed:   300
+                });
+            });
+        </script>
+    </body>
+</html>

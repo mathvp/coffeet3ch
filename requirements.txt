@@ -1,0 +1,8 @@
+dj-database-url
+dj-static
+Django
+python-decouple
+pytz
+sqlite3
+sqlite3server
+static3
