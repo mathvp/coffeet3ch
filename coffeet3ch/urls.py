@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from coffeet3ch.subscriptions.views import subscribe
 import coffeet3ch.core.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', coffeet3ch.core.views.home)
+    path('inscricao/', subscribe),
+    path('', coffeet3ch.core.views.home),
 ]

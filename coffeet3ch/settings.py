@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'coffeet3ch.core'
+    'coffeet3ch.core',
+    'coffeet3ch.subscriptions'
 ]
 
 MIDDLEWARE = [
